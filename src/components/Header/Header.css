@@ -1,0 +1,34 @@
+.header{
+    width: 100%;
+    height: 64px;
+    background-color:#F5F5F5; ;
+
+   
+}
+
+.logo{
+position: absolute;
+left: 5.87%;
+right: 85.94%;
+top: 2.08%;
+bottom: 93.19%;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 13.3649px;
+line-height: 126%;
+
+
+letter-spacing: -0.02em;
+}
+.profile{
+  position: absolute;
+width: 28px;
+height: 28px;
+left: 975.5px;
+top: 17px;
+
+background: #606060;
+}
+

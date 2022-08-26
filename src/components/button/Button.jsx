@@ -4,6 +4,7 @@ import "./button.css"
 const Button = (props) => {
     const submitHandler = (event) => {
         event.preventDefault();
+        props.onSubmitForm();
     }
 
     return (
@@ -13,4 +14,4 @@ const Button = (props) => {
     )
 }
 
-export default Button
+export default Button;

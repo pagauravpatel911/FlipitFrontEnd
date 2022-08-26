@@ -1,6 +1,7 @@
 import axios from "axios"
 import { useRef } from "react"
-
+import Button from "../button/Button"
+import "./LoginPage.css"
 
 
 const Loginpage = () => {
@@ -18,18 +19,7 @@ const Loginpage = () => {
       } catch (error) {
         console.log(error);
       }
-    //     fetch("http://localhost:4200/users/login",{
-    //       method: "POST",
-    //       headers: {
-    //         "Content-Type": "application/json",
-    //       },
-    //       body: JSON.stringify(data)
-    //     }).then((res)=>res.json)
-    //     .then((data) => {
-    //       console.log(data)
-    //       form.current.reset()
-        
-    // }).catch((err) => {console.log(err)}); 
+
   }
 
 return(
@@ -41,7 +31,7 @@ return(
       <input type="password" className="form-control" placeholder="password" onChange={(event)=>{
         readValue("password",event.target.value)
       }} />
-      <button type="button" className="btn btn-danger" onClick={LoginUser}>Login</button>
+     <Button  text = "click" onSubmitForm={LoginUser}></Button>
     </form>
 )
 }
