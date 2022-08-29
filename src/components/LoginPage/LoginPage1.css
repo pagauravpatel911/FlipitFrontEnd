@@ -1,0 +1,16 @@
+.container{
+    display: flex;
+    background-color: aqua;
+    
+    padding: 20px;
+}
+
+.email{
+    padding: 10px;
+    display: block;
+}
+
+.password{
+    padding: 10px;
+    display: block;
+}
