@@ -46,7 +46,7 @@ const LoginPage1 = (props) => {
     }
 
     return (
-        <div className="container">
+        <div className="container1">
         <form onSubmit={onSubmitForm}>
             <div className="control-group">
                 <div className="form-control email">

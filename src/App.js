@@ -5,6 +5,7 @@ import HomePage from "./components/HomePage/HomePage";
 import Header from './components/Header/Header';
 import{BrowserRouter,Routes,Route} from "react-router-dom"
 import UploadDocumentForm from './components/UploadDocumentForm/UploadDocumentForm';
+import PieChart from './components/PieChart/PieChart';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
      <Route path="/header" element={<Header/>} />
      <Route path="/uploadDoc" element={<UploadDocumentForm/>}/>
      <Route path="/allDocs" element={<Loginpage/>} />
+     <Route path="/pie" element={<PieChart/>} />
    </Routes>
    </BrowserRouter>
     </div>

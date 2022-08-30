@@ -48,8 +48,6 @@ const UploadDocumentForm = (props) => {
         reset: resetMetaDescription,
     } = useInput(value => value.trim() !== "")
 
-    // const hasError = document.trim() === "" && isTouched
-
     let formIsValid = false;
 
     if (isValidName && isValidDoc && isValidCDocPic && isValidMetaName && isValiMetaDescription) {
@@ -66,7 +64,7 @@ const UploadDocumentForm = (props) => {
             meta_title: enterdMetaName,
         }
         console.log(data)
-        console.log(formIsValid)
+        
         resetName()
         resetDoc()
         resetDocPic()
