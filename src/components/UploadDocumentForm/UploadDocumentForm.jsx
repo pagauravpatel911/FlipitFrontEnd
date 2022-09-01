@@ -15,6 +15,7 @@ const UploadDocumentForm = (props) => {
     const {
         value: enterdDoc,
         isValid: isValidDoc,
+        val: docValueTaget,
         hasError: docHasError,
         valueChangeHandler: docChangeHandler,
         inputBlurHandler: docBlurHandler,
@@ -63,7 +64,9 @@ const UploadDocumentForm = (props) => {
             meta_description: enterdMetaDescription,
             meta_title: enterdMetaName,
         }
+        const uri = URL.createObjectURL(docValueTaget.files[0])
         console.log(data)
+        console.log(uri)
         
         resetName()
         resetDoc()
@@ -76,7 +79,7 @@ const UploadDocumentForm = (props) => {
 
     return (
         <div className="form-container">
-            <form onSubmit={formSubmitHandler}>
+            <form onSubmit={formSubmitHandler} className="fcontainer">
                 <div className="form-control">
                     <label htmlFor="document">Document</label>
                     <input onChange={docChangeHandler} onBlur={docBlurHandler} type="file" id="document" name="document" value={enterdDoc} />
