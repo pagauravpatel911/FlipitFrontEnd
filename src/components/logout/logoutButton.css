@@ -1,0 +1,20 @@
+.logout-button{
+    position: absolute;
+    width: 76px;
+    height: 26px;
+    left: 1184px;
+    top: 19px;
+
+    background: rgba(234, 103, 103, 0.24);
+    border-radius: 3px;
+}
+
+.logout-icon{
+    position: absolute;
+    left: 8.33%;
+    right: 0%;
+    top: 8.33%;
+    bottom: 8.33%;
+
+    background: #EA6767;
+}

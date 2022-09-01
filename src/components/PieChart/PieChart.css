@@ -1,0 +1,14 @@
+.body1 {
+    background-color: "#ffd380";
+}
+
+.outer-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.pie_chart{
+    background-color:aqua;
+    border: 2px solid black;
+}
