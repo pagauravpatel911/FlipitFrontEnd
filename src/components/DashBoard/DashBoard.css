@@ -1,0 +1,73 @@
+.dashboard_table{
+width: 95%;
+margin: 2rem;
+
+}
+.dashboard_head{
+    height: 3rem;
+   
+
+    border: 0.5px solid  #b2bac1;
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 126%;
+    /* identical to box height, or 18px */
+    
+    letter-spacing: -0.02em;
+    
+    color: #3E3838;
+   
+}
+
+
+table tr td {
+font-family: 'Roboto';
+font-style: normal;
+text-align: center;
+font-weight: 300;
+font-size: 12px;
+line-height: 126%;
+height: 3.5rem;
+/* or 15px */
+
+letter-spacing: -0.02em;
+
+color: #3E3838;
+
+
+}
+
+.info_button{
+width:72px;
+height:25.85px;
+background: #FFFFFF;
+border: 0.923077px solid #316CC6;
+border-radius: 2px;
+display: flex;
+column-gap: 0.3rem;
+justify-content: center;
+align-items: center; 
+margin-left: 2.5rem;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 11px;
+line-height: 126%;
+/* identical to box height, or 14px */
+
+letter-spacing: -0.02em;
+
+color: #316CC6;
+}
+.link_info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+
+
+
