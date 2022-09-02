@@ -259,3 +259,53 @@ opacity: 0.5;
 border: 1px solid #316CC6;
 border-radius: 2px;
 }
+
+.document_Label{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 0.4rem;
+}
+
+.input[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+.toggle {
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 26px;
+	height: 14px;
+	background: grey;
+	display: block;
+	border-radius: 100px;
+	position: relative;
+}
+
+.toggle:after {
+	content: '';
+	position: absolute;
+	top: 2.8px;
+	left: 2.2px;
+	width: 10px;
+	height: 10px;
+	background: #fff;
+	border-radius: 90px;
+	transition: 0.3s;
+}
+
+.input:checked + .toggle {
+	background:  #316CC6;;
+}
+
+.input:checked + .toggle:after {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
+}
+
+.toggle:active:after {
+	width: 15px;
+}
+

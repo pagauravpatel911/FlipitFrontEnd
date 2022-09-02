@@ -10,11 +10,12 @@ import Dashboard from './components/DashBoard/DashBoard';
 import UploadedDocs from './components/Upload/UploadDocs/UploadDocs';
 
 import UploadDocumentForm from './components/Upload/UploadDocumentForm/UploadDocumentForm';
-import PieChart from './components/PieChart/PieChart';
+import PieChart from './components/PieChart/PieChartImg/PieChart';
 
 import GInfoElement from './components/GInfoElement/GInfoElemet';
 import Responce from './components/Responce/Responce';
 import UploadNewDocs from './components/Upload/UploadNewDocs/UploadNewDocs';
+import EvaluteDoc from './components/PieChart/EvaluteDoc/EvaluteDoc';
 function App() {
   return (
     <div className="App">
@@ -34,6 +35,7 @@ function App() {
      <Route path="/Info_element" element={<GInfoElement/>} />
      <Route path="/Responce" element={<Responce/>} />
      <Route path="/UploadNewDocs" element={<UploadNewDocs/>} />
+     <Route path="/EvaluteDoc" element={<EvaluteDoc/>} />
 
    </Routes>
    </BrowserRouter>

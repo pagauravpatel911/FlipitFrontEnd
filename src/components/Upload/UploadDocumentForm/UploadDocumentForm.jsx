@@ -91,6 +91,12 @@ const UploadDocumentForm = (props) => {
             <label className="label_name" htmlFor="document">
               Document
             </label>
+            
+            <input class="input" type="checkbox" id="switch" /><label for="switch" class="toggle">Toggle</label>
+            {/* <div>
+            <input type="checkbox" id="switch" /><label for="switch">Toggle</label>
+            </div> */}
+          
             </div>
             <div className="document_uploadButton">
                 <button>Choose File</button>
