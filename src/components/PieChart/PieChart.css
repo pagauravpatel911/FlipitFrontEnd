@@ -3,12 +3,23 @@
 }
 
 .outer-container{
+    margin: 2rem;
     display: flex;
     justify-content: space-evenly;
+   
     align-items: center;
 }
 
-.pie_chart{
-    background-color:aqua;
-    border: 2px solid black;
+.custom_css{
+    
+    width: 515px !important;
+   height: 333.94px !important;
+
+}
+
+.custom_table{
+    background-color: ghostwhite;
+
+
+
 }

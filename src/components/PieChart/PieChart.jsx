@@ -1,4 +1,4 @@
-import "./PieChart.css"
+import "./PieChart.css";
 import Highcharts from "highcharts";
 import HighchartsReact from "highcharts-react-official";
 import ViewerTable from "../ViewerTable/ViewerTable";
@@ -8,52 +8,52 @@ const color = ["#ffd380", "#ffa600", "#ff8531", "#ff6361", "#bc5090", "#8a508f",
 const DUMMY_DATA = [
     {
         id: 1,
-        city: "Mumbai",
+        name: "Mumbai",
         count: 100,
     },
     {
         id: 2,
-        city: "Pune",
+        name: "Pune",
         count: 90,
     },
     {
         id: 3,
-        city: "Dehli",
+        name: "Dehli",
         count: 80,
     },
     {
         id: 4,
-        city: "Noida",
+        name: "Noida",
         count: 70,
     },
     {
         id: 5,
-        city: "Bangalore",
+        name: "Bangalore",
         count: 60,
     },
     {
         id: 6,
-        city: "Chennai",
+        name: "Chennai",
         count: 50,
     },
     {
         id: 7,
-        city: "Bhopal",
+        name: "Bhopal",
         count: 40,
     },
     {
         id: 8,
-        city: "Paipur",
+        name: "Paipur",
         count: 30,
     },
     {
         id: 9,
-        city: "Kochi",
+        name: "Kochi",
         count: 20,
     },
     {
         id: 10,
-        city: "Agra",
+        name: "Agra",
         count: 10
     }
 ]
@@ -62,7 +62,7 @@ const PieChart = (props) => {
     const i = 1
     const cities = DUMMY_DATA.map(data => {
         return {
-            name: data.city,
+            name: data.name,
             y: data.count
         }
     })
@@ -101,14 +101,14 @@ const PieChart = (props) => {
         }]
     }
     return (
-        <div className="outer-container">
-            <div className="pie-chart">
+        <div className="outer-container table">
+            <div className="pie-chart custom_css">
                 <HighchartsReact
                     highcharts={Highcharts}
                     options={options}
                 />
             </div>
-            <div className="view-table">
+            <div className="view-table custom_table">
                 <ViewerTable data={cities}/>   
             </div>
         </div>
