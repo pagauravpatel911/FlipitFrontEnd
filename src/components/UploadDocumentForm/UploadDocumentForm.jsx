@@ -1,10 +1,12 @@
 import "./UploadDocumentForm.css";
 
 import arrowUp from "../../icons/upload-arrow-up.svg";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import useInput from "../../hooks/use-input";
 
 const UploadDocumentForm = (props) => {
+    const chooseInputDocRef = useRef()
+    const chooseInputThumbRef = useRef()
   const {
     value: enterdName,
     isValid: isValidName,
@@ -82,6 +84,14 @@ const UploadDocumentForm = (props) => {
     resetMetaDescription();
   };
 
+  const DochandleChooseClick = () => {
+    chooseInputDocRef.current.click()
+  }
+
+  const ThumbhandleChooseClick = () => {
+    chooseInputThumbRef.current.click()
+  }
+
   return ( 
     <form className="row align-items-center margin_component" >
       <div className="col-12 col-lg-6 col-md-3 upload_container">
@@ -92,9 +102,10 @@ const UploadDocumentForm = (props) => {
               Document
             </label>
             </div>
-            <div className="document_uploadButton">
+            <div className="document_uploadButton" onClick={DochandleChooseClick}>
                 <button>Choose File</button>
                 <span>No file chosen...</span>
+                <input accept=".csv,.xlsx" ref={chooseInputDocRef} className="upload-file-input w-100 py-1 d-none" type="file" />
             </div>
          
          
@@ -142,9 +153,10 @@ const UploadDocumentForm = (props) => {
         
             </div>
             <span className="span_css">Image to show when someone paste or share this file link in any chat</span>
-            <div className="document_uploadButton">
+            <div className="document_uploadButton" onClick={ThumbhandleChooseClick}>
                 <button>Choose File</button>
                 <span>No file chosen...</span>
+                <input ref={chooseInputThumbRef} className="upload-file-input w-100 py-1 d-none" type="file" />
             </div>
        
         </div>
