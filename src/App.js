@@ -12,6 +12,7 @@ import UploadedDocs from './components/UploadDocs/UploadDocs';
 import UploadDocumentForm from './components/UploadDocumentForm/UploadDocumentForm';
 import PieChart from './components/PieChart/PieChart';
 
+import GInfoElement from './components/GInfoElement/GInfoElemet';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
      <Route path="/uploadDoc" element={<UploadDocumentForm/>}/>
      <Route path="/allDocs" element={<Loginpage/>} />
      <Route path="/pie" element={<PieChart/>} />
+     <Route path="/Info_element" element={<GInfoElement/>} />
 
    </Routes>
    </BrowserRouter>

@@ -27,8 +27,8 @@ const ViewerTable = (props) => {
     const {getTableProps, getTableBodyProps, headerGroups, rows, prepareRow} = tableInstance
     
     return (
-        <table {...getTableProps()}>
-            <thead>
+        <table {...getTableProps()} className="table_container">
+            <thead className="table_head">
                 {headerGroups.map((headerGroup) => (
                     <tr {...headerGroup.getHeaderGroupProps()}>
                         {
@@ -39,7 +39,7 @@ const ViewerTable = (props) => {
                     </tr>
                 ))}
             </thead>
-            <tbody {...getTableBodyProps()}>
+            <tbody {...getTableBodyProps()} className="table_data">
                 {rows.map((row) => {
                     prepareRow(row)
                     return (
