@@ -7,13 +7,14 @@ import{BrowserRouter,Routes,Route} from "react-router-dom"
 
 import NavBar from './components/Header/Navbar/Navbar';
 import Dashboard from './components/DashBoard/DashBoard';
-import UploadedDocs from './components/UploadDocs/UploadDocs';
+import UploadedDocs from './components/Upload/UploadDocs/UploadDocs';
 
-import UploadDocumentForm from './components/UploadDocumentForm/UploadDocumentForm';
+import UploadDocumentForm from './components/Upload/UploadDocumentForm/UploadDocumentForm';
 import PieChart from './components/PieChart/PieChart';
 
 import GInfoElement from './components/GInfoElement/GInfoElemet';
-
+import Responce from './components/Responce/Responce';
+import UploadNewDocs from './components/Upload/UploadNewDocs/UploadNewDocs';
 function App() {
   return (
     <div className="App">
@@ -31,6 +32,8 @@ function App() {
      <Route path="/allDocs" element={<Loginpage/>} />
      <Route path="/pie" element={<PieChart/>} />
      <Route path="/Info_element" element={<GInfoElement/>} />
+     <Route path="/Responce" element={<Responce/>} />
+     <Route path="/UploadNewDocs" element={<UploadNewDocs/>} />
 
    </Routes>
    </BrowserRouter>
