@@ -1,0 +1,62 @@
+/* //356-- h
+//622-- width */
+
+.Responce{
+    height: 22.25rem;
+    width: 38.87rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid gray;
+    position: relative;
+}
+.cross_Icon{
+    position: absolute;
+    top:0.5rem;
+    right: 0.5rem;
+    height: 0.7rem;
+    width: 0.7rem;
+    border-radius: 0px;
+
+
+}
+.Responce span{
+  
+width: 292px;
+height: 23px;
+
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 126%;
+/* identical to box height, or 23px */
+
+letter-spacing: -0.02em;
+
+color: #3E3838;
+}
+.Responce button{
+
+
+
+width: 96px;
+height: 29px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 126%;
+/* or 16px */
+
+letter-spacing: -0.02em;
+
+color: #939393;
+
+border: 1px solid #C7C7C7;
+border-radius: 2px;
+}

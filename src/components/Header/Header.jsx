@@ -2,7 +2,7 @@ import "./Header.css"
 import Logo from "../../icons/logo.svg"
 import logout from "../../icons/logout-icon.svg"
 import NavBar from "./Navbar/Navbar"
-import UploadedDocs from "../UploadDocs/UploadDocs"
+import UploadedDocs from "../Upload/UploadDocs/UploadDocs"
 import Dashboard from "../DashBoard/DashBoard"
 
 const Header = (props) => {

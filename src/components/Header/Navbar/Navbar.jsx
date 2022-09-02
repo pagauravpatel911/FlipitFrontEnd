@@ -15,10 +15,15 @@ const NavBar = (props) => {
             <img src={dashboard} alt="Vector" className="dashboard_img"></img>
             <span className="dashboard_text">Dashboard</span>
             </div>
-            <div className="document_m">
+            <div className="document_m dropdown">
                 <img src={uploadedDocs} alt="" className="document_img" />
                 <span className="document_text">Document Management</span>
                 <img src={arrowDown} alt="" className="down_arrow" />
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+  </div>
 
             </div>
             <div className="user_m">

@@ -1,7 +1,7 @@
 import "./UploadDocs.css";
-import uploadedDocs from "../../icons/uploaded-docs.svg";
-import uploadedArrowUp from "../../icons/upload-arrow-up.svg";
-import Search from "../../icons/search.svg";
+import uploadedDocs from "../../../icons/uploaded-docs.svg";
+import uploadedArrowUp from "../../../icons/upload-arrow-up.svg";
+import Search from "../../../icons/search.svg";
 
 const UploadedDocs = () => {
   return (
