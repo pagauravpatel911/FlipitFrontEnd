@@ -1,16 +1,16 @@
 import { useState } from "react";
 
-const useInput = (validateValue, type="text") => {
+const useInput = (validateValue, maxlen) => {
     const [enteredValue, setEnteredValue] = useState("")
     const [isTouched, setIsTouched] = useState(false)
-    const [val, setVal] = useState({})
 
     const isValidValue = validateValue(enteredValue)
+    const validInputLength = (value) => value.trim().length > Number(maxlen)
     const hasError = !isValidValue && isTouched
+    const maxLen = validInputLength(enteredValue)
 
     const valueChangeHandler = (event) => {
         console.log(event.target)
-        setVal(event.target)
         setEnteredValue(event.target.value)
     }
 
@@ -26,9 +26,9 @@ const useInput = (validateValue, type="text") => {
     return {
         value: enteredValue,
         isValid: isValidValue,
+        isValidLen: maxLen,
         hasError,
         isTouched,
-        val,
         valueChangeHandler,
         inputBlurHandler,
         reset,

@@ -9,10 +9,11 @@ const UploadDocumentForm = (props) => {
     value: enterdName,
     isValid: isValidName,
     hasError: nameHasError,
+    isValidLen: nameIsValidLen,
     valueChangeHandler: nameChangeHandler,
     inputBlurHandler: nameBlurHandler,
     reset: resetName,
-  } = useInput((value) => value.trim() !== "");
+  } = useInput((value) => value.trim() !== "", 100);
 
   const {
     value: enterdDoc,
@@ -36,28 +37,31 @@ const UploadDocumentForm = (props) => {
     value: enterdMetaName,
     isValid: isValidMetaName,
     hasError: metaNameHasError,
+    isValidLen: metaNameIsValidLen,
     valueChangeHandler: metaNameChangeHandler,
     inputBlurHandler: metaNameBlurHandler,
     reset: resetMetaName,
-  } = useInput((value) => value.trim() !== "");
+  } = useInput((value) => value.trim() !== "", 300);
 
   const {
     value: enterdMetaDescription,
     isValid: isValiMetaDescription,
     hasError: metaDescriptionHasError,
+    isValidLen: metaDescrptionIsValidLen,
     valueChangeHandler: metaDescriptionChangeHandler,
     inputBlurHandler: metaDescriptionBlurHandler,
     reset: resetMetaDescription,
-  } = useInput((value) => value.trim() !== "");
+  } = useInput((value) => value.trim() !== "", 1000);
 
   let formIsValid = false;
 
   if (
     isValidName &&
-    isValidDoc &&
-    isValidCDocPic &&
     isValidMetaName &&
-    isValiMetaDescription
+    isValiMetaDescription &&
+    !nameIsValidLen &&
+    !metaNameIsValidLen && 
+    !metaDescrptionIsValidLen
   ) {
     formIsValid = true;
   }
@@ -74,8 +78,6 @@ const UploadDocumentForm = (props) => {
     console.log(data);
 
     resetName();
-    resetDoc();
-    resetDocPic();
     resetMetaName();
     resetMetaDescription();
   };
@@ -111,6 +113,7 @@ const UploadDocumentForm = (props) => {
             value={enterdName}
           />
           {nameHasError && <p>please enter a document name</p>}
+          {nameIsValidLen && <p>can enter 100 characters only</p>}
         </div>
       </div>
       <div className="col-12 col-lg-6  col-md-3 upload_container">
@@ -128,6 +131,7 @@ const UploadDocumentForm = (props) => {
               value={enterdMetaName}
             />
             {metaNameHasError && <p>please enter meta title for document</p>}
+            {metaNameIsValidLen && <p>can enter 300 characters only</p>}
           </div>
         </div>
       </div>
@@ -154,14 +158,15 @@ const UploadDocumentForm = (props) => {
             onBlur={metaDescriptionBlurHandler}
             id="meta-description"
             name="meta-description"
-            maxlength="1000"
+            maxLength="1000"
             required="required"
             className="meta_descriptionInput"
           ></textarea>
           {metaDescriptionHasError && <p>please enter the meta description for a document</p>}
+          {metaDescrptionIsValidLen && <p>can enter 1000 characters only</p>}
         </div>
       </div>
-        <button>Upload document</button>
+        <button disabled={!formIsValid} onClick={formSubmitHandler}>Upload document</button>
     </form>
 
     // <div className="upload_container">
