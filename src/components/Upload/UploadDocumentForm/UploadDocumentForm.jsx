@@ -1,14 +1,8 @@
 import "./UploadDocumentForm.css";
 
-<<<<<<< HEAD:src/components/UploadDocumentForm/UploadDocumentForm.jsx
-import arrowUp from "../../icons/upload-arrow-up.svg";
-import React, { useEffect, useRef, useState } from "react";
-import useInput from "../../hooks/use-input";
-=======
 import arrowUp from "../../../icons/upload-arrow-up.svg";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import useInput from "../../../hooks/use-input";
->>>>>>> 33246b95724029b64b8a65a312fe057088fb37c6:src/components/Upload/UploadDocumentForm/UploadDocumentForm.jsx
 
 const UploadDocumentForm = (props) => {
     const chooseInputDocRef = useRef()
