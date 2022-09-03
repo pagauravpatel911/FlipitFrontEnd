@@ -1,8 +1,9 @@
 import "./UploadDocumentForm.css";
 
 import arrowUp from "../../../icons/upload-arrow-up.svg";
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState ,useRef} from "react";
 import useInput from "../../../hooks/use-input";
+
 
 const UploadDocumentForm = (props) => {
     const chooseInputDocRef = useRef()
@@ -101,6 +102,12 @@ const UploadDocumentForm = (props) => {
             <label className="label_name" htmlFor="document">
               Document
             </label>
+            
+            <input class="input" type="checkbox" id="switch" /><label for="switch" class="toggle">Toggle</label>
+            {/* <div>
+            <input type="checkbox" id="switch" /><label for="switch">Toggle</label>
+            </div> */}
+          
             </div>
             <div className="document_uploadButton" onClick={DochandleChooseClick}>
                 <button>Choose File</button>
