@@ -1,9 +1,6 @@
 import "./Header.css"
 import Logo from "../../icons/logo.svg"
 import logout from "../../icons/logout-icon.svg"
-import NavBar from "./Navbar/Navbar"
-import UploadedDocs from "../Upload/UploadDocs/UploadDocs"
-import Dashboard from "../DashBoard/DashBoard"
 
 const Header = (props) => {
   
@@ -17,8 +14,8 @@ const Header = (props) => {
 
       <div className="right_div">
         <div className="subright_left">
-        <div>
-            <img src="" alt="" srcset="" className="profile" />
+        <div className="profile">
+           <span>GS</span>
         </div>
         <div className="title_container">
          <h3 className="title">Gaurav@Asmadgiya.com</h3>
@@ -34,9 +31,8 @@ const Header = (props) => {
        
     
         </header>
-        <NavBar/>
-          <UploadedDocs/>
-          <Dashboard/>
+    
+    
         </>
          
 

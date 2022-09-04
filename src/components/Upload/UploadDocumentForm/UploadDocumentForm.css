@@ -60,7 +60,7 @@ color: #979797;
 }
 
 
-
+/* 
 .left_container{
     display: flex;
     flex-direction: column;
@@ -72,7 +72,7 @@ color: #979797;
 .right_container{
     display: flex;
     flex-direction: column;
-}
+} */
 
 .document_upload{
  
@@ -153,6 +153,7 @@ top: 369px;
 background: #FFFFFF;
 border: 1px solid #C7C7C7;
 border-radius: 2px;
+outline: none;
 }
 
 .meta_description{
@@ -225,6 +226,7 @@ height: 43px;
 background: #FFFFFF;
 border: 1px solid #C7C7C7;
 border-radius: 2px;
+outline: none;
 }
 .meta_thumbnail{
     display: flex;
@@ -287,7 +289,7 @@ border-radius: 2px;
 .toggle:after {
 	content: '';
 	position: absolute;
-	top: 2.8px;
+	top: 2.2px;
 	left: 2.2px;
 	width: 10px;
 	height: 10px;
@@ -309,3 +311,12 @@ border-radius: 2px;
 	width: 15px;
 }
 
+.errorMsgDisplay{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 15px;
+
+color: #EA6767;
+}

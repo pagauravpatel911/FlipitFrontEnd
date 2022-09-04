@@ -31,6 +31,7 @@ font-weight: 700;
 font-size: 13.3649px;
 line-height: 126%;
 margin-left: 2rem;
+cursor: pointer;
 
 
 letter-spacing: -0.02em;
@@ -40,9 +41,23 @@ letter-spacing: -0.02em;
   border-radius: 50%;
 width: 28px;
 height: 28px;
-
+text-align: center;
+cursor: pointer;
 
 background: #606060;
+}
+.profile span{
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 12.5517px;
+line-height: 126%;
+
+
+
+letter-spacing: -0.02em;
+
+color: #EFEFEF;
 }
 .title_container{
   margin-top: 0.5rem;
@@ -52,7 +67,7 @@ background: #606060;
   
     width: 134px;
     height: 15px;
-   
+   cursor: pointer;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -114,6 +129,7 @@ border-radius: 3px;
 display: flex;
 justify-content: center;
 align-items: center;
+cursor: pointer;
 }
 .buttons_text{
   
@@ -130,10 +146,6 @@ margin-top: 5px;
 color: #EA6767;
 
 }
-/* .logout_icons{
-  #EA6767
 
-
-} */
 
 

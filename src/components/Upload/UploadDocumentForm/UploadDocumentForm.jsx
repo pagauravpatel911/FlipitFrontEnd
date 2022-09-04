@@ -3,6 +3,7 @@ import "./UploadDocumentForm.css";
 import arrowUp from "../../../icons/upload-arrow-up.svg";
 import React, { useEffect, useState ,useRef} from "react";
 import useInput from "../../../hooks/use-input";
+import ErrorSvg from "../../../icons/error-round.svg";
 
 
 const UploadDocumentForm = (props) => {
@@ -130,8 +131,8 @@ const UploadDocumentForm = (props) => {
             name="document-name"
             value={enterdName}
           />
-          {nameHasError && <p>please enter a document name</p>}
-          {nameIsValidLen && <p>can enter 100 characters only</p>}
+          {nameHasError && <span className="errorMsgDisplay"><img src={ErrorSvg}></img> please enter a document name</span>}
+          {nameIsValidLen && <p className="errorMsgDisplay"><img src={ErrorSvg}/>can enter 100 characters only</p>}
         </div>
       </div>
       <div className="col-12 col-lg-6  col-md-3 upload_container">
@@ -148,8 +149,8 @@ const UploadDocumentForm = (props) => {
               className="meta_titleInput"
               value={enterdMetaName}
             />
-            {metaNameHasError && <p>please enter meta title for document</p>}
-            {metaNameIsValidLen && <p>can enter 300 characters only</p>}
+            {metaNameHasError && <p className="errorMsgDisplay"><img src={ErrorSvg}></img> please enter meta title for document</p>}
+            {metaNameIsValidLen && <p className="errorMsgDisplay"><img src={ErrorSvg}></img> can enter 300 characters only</p>}
           </div>
         </div>
       </div>
@@ -181,11 +182,11 @@ const UploadDocumentForm = (props) => {
             required="required"
             className="meta_descriptionInput"
           ></textarea>
-          {metaDescriptionHasError && <p>please enter the meta description for a document</p>}
-          {metaDescrptionIsValidLen && <p>can enter 1000 characters only</p>}
+          {metaDescriptionHasError && <p className="errorMsgDisplay"><img src={ErrorSvg}></img> please enter the meta description for a document</p>}
+          {metaDescrptionIsValidLen && <p className="errorMsgDisplay"><img src={ErrorSvg}></img> can enter 1000 characters only</p>}
         </div>
       </div>
-        <button disabled={!formIsValid} onClick={formSubmitHandler}>Upload document</button>
+     
     </form>
 
     // <div className="upload_container">

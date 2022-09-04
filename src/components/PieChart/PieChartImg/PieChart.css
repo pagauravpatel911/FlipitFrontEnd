@@ -8,6 +8,11 @@
     justify-content: space-evenly;
    
     align-items: center;
+    width: 1208px !important;
+  
+   height: 533px !important;
+  
+   
 }
 
 .custom_css{

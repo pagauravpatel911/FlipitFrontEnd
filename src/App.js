@@ -16,27 +16,29 @@ import GInfoElement from './components/GInfoElement/GInfoElemet';
 import Responce from './components/Responce/Responce';
 import UploadNewDocs from './components/Upload/UploadNewDocs/UploadNewDocs';
 import EvaluteDoc from './components/PieChart/EvaluteDoc/EvaluteDoc';
+import UploadDocPage from './components/Pages/UploadDocPage/UploadDocPage';
+import EvaulatePage from './components/Pages/EvaulatePage/EvaulatePage';
 function App() {
   return (
     <div className="App">
    <BrowserRouter>
    <Routes>
-     <Route path="/" element={<Loginpage1/>} />
-     <Route path="/home" element={<HomePage/>} />
-     <Route path="/header" element={<Header/>} />
+     <Route path="/" element={<Loginpage1/>}/>
+     <Route path="/home" element={<HomePage/>}/>
+     <Route path="/header" element={<Header/>}/>
 
-     <Route path="/navbar" element={<NavBar/>}  />
-     <Route path="/dashboard" element={<Dashboard/>}   />
-     <Route path="/uploadDocs" element={<UploadedDocs/>}   />
-
+     <Route path="/navbar" element={<NavBar/>}/>
+     <Route path="/dashboard" element={<Dashboard/>}/>
+     <Route path="/uploadDocs" element={<UploadedDocs/>}/>
      <Route path="/uploadDoc" element={<UploadDocumentForm/>}/>
-     <Route path="/allDocs" element={<Loginpage/>} />
-     <Route path="/pie" element={<PieChart/>} />
-     <Route path="/Info_element" element={<GInfoElement/>} />
+     <Route path="/allDocs" element={<Loginpage/>}/>
+     <Route path="/pie" element={<PieChart/>}/>
+     <Route path="/Info_element" element={<GInfoElement/>}/>
      <Route path="/Responce" element={<Responce/>} />
-     <Route path="/UploadNewDocs" element={<UploadNewDocs/>} />
-     <Route path="/EvaluteDoc" element={<EvaluteDoc/>} />
-
+     <Route path="/UploadNewDocs" element={<UploadNewDocs/>}/>
+     <Route path="/EvaluteDoc" element={<EvaluteDoc/>}/>
+     <Route path="/uploadDocPage" element={<UploadDocPage/>}/>
+     <Route path="/EvaulatePage" element={<EvaulatePage/>}/>
    </Routes>
    </BrowserRouter>
     </div>
