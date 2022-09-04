@@ -1,0 +1,37 @@
+.Statics_table{
+ 
+width: 586px;
+
+
+
+border: 1px solid #DDDDDD;
+}
+.statics_head{
+    height:2rem;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 160.5%;
+/* identical to box height, or 21px */
+
+letter-spacing: 0.02em;
+
+color: #3E3838;
+text-align: center;
+
+}
+.statics_data{
+    font-family: 'Roboto';
+    height: 2rem;
+font-style: normal;
+font-weight: 300;
+font-size: 13px;
+line-height: 160.5%;
+/* identical to box height, or 21px */
+
+letter-spacing: 0.02em;
+
+color: #3E3838;
+ text-align: center;
+}

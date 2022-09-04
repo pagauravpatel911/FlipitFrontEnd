@@ -18,6 +18,7 @@ import UploadNewDocs from './components/Upload/UploadNewDocs/UploadNewDocs';
 import EvaluteDoc from './components/PieChart/EvaluteDoc/EvaluteDoc';
 import UploadDocPage from './components/Pages/UploadDocPage/UploadDocPage';
 import EvaulatePage from './components/Pages/EvaulatePage/EvaulatePage';
+import Table from './components/Table/Table';
 function App() {
   return (
     <div className="App">
@@ -39,6 +40,7 @@ function App() {
      <Route path="/EvaluteDoc" element={<EvaluteDoc/>}/>
      <Route path="/uploadDocPage" element={<UploadDocPage/>}/>
      <Route path="/EvaulatePage" element={<EvaulatePage/>}/>
+     <Route path="/Table" element={<Table/>}/>
    </Routes>
    </BrowserRouter>
     </div>
