@@ -42,7 +42,6 @@ const Table = (props) =>{
     <td>22,047</td>
   
 
-  
   </tr>
   <tr className="statics_data">
     <td>5</td>

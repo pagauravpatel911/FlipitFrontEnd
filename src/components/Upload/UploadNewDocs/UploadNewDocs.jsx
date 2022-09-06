@@ -1,11 +1,19 @@
 import "./UploadNewDocs.css";
 import AddDocumentIcons from "../../../icons/add-document.svg";
 import uploadedArrowUp from "../../../icons/upload-arrow-up.svg";
+import { useState } from "react";
+import Responce from "../../Responce/Responce";
 
 
 const UploadNewDocs = () => {
+
+ 
+
+
   return (
+   
     <div className="uploadNewDocs">
+     
         <div className="uploadNewDoc_leftContainer">
             <img src={AddDocumentIcons}></img>
             <span>Upload New Document</span>
@@ -18,6 +26,7 @@ const UploadNewDocs = () => {
         </div>
 
     </div>
+   
   );
 };
 export default UploadNewDocs;

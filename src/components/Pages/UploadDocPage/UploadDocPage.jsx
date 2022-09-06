@@ -10,7 +10,6 @@ const UploadDocPage = (props) => {
  <>
   <Header/>
   <NavBar/>
-  <UploadNewDocs/>
   <UploadDocumentForm/> 
 </>
     )
