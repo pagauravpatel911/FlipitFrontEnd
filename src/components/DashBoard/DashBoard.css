@@ -5,6 +5,8 @@ margin: 2rem;
 }
 .dashboard_head{
     height: 3rem;
+ 
+  
    
 
     border: 0.5px solid  #b2bac1;
@@ -31,14 +33,14 @@ font-weight: 300;
 font-size: 12px;
 line-height: 126%;
 height: 3.5rem;
-/* or 15px */
+
 
 letter-spacing: -0.02em;
 
 color: #3E3838;
 
 
-}
+} 
 
 .info_button{
 width:72px;
@@ -64,10 +66,71 @@ color: #316CC6;
 }
 .link_info{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    column-gap: 0.5rem;
+    width: 300px;
+    height: 34px !important;
+    margin-top: 10px !important;
+    margin-left: 10px!important;
+    padding: 0px 6px;
+    /* column-gap: 0.5rem; */
+    border: 1px solid #F4F4F4;
+    overflow: hidden;
 }
 
+.info-scroll{
+    /* background-color: #b2bac1; */
+width: 250px;
+height: 100%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11px !important;
+    line-height: 30px;
+    /* identical to box height, or 14px */
+    
+    letter-spacing: -0.02em;
+    text-align: start;
+ 
+    
+    color: #3E3838;
+    overflow-x: scroll;  
+    overflow-y: hidden;
+ 
+    /* overflow-x: scroll; */
+}
+.info-scroll::-webkit-scrollbar {
+    width: 1px !important;               /* width of the entire scrollbar */
+  }
+
+/* 
+.dashboard_data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
 
 
+
+
+
+
+/* 
+  .info-scroll::-webkit-scrollbar-track {
+    background: white;       
+  }
+  .info-scroll::-webkit-scrollbar-thumb {
+    background-color: blue;    
+    border-radius: 20px;     
+    border: 3px solid orange; 
+  } */
+
+.dashboard__url{
+    width: 200px;
+}
+.link_text{
+width: 170%;
+}
+.info-scroll::-webkit-scrollbar {
+    height: 5px;               /* width of the entire scrollbar */
+  }

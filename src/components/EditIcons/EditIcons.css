@@ -1,0 +1,48 @@
+
+
+
+    .triangle {
+        width: 11px;
+        height: 11px;
+        background-image:
+          linear-gradient(to bottom right, transparent 50%, #4c4444 0),
+          linear-gradient(to top right, #4c4444 50%, transparent 0);
+        background-size: 50% 100%;
+        background-repeat: no-repeat;
+        background-position: left, right;
+        position: relative;
+        right: 0px;
+        left:109px;
+        bottom: 5px;
+        top:4px;
+       
+        
+      }
+
+
+
+.EditIcons_div{
+ 
+    width: 10.31rem;
+    height: 2.67rem;
+    display: flex;
+    justify-content:space-between;
+  
+    
+    background: #FFFFFF;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.06);
+    border-radius: 2px;
+}
+.E_icons{
+    width: 2.9rem;
+height: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border-right: 1px solid #F3F3F3;
+
+}
+.delete_icons{
+
+    background-color: #EA6767;;
+}

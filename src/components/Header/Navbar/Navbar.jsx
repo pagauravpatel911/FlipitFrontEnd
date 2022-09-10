@@ -4,6 +4,7 @@ import dashboard from "../../../icons/dashboard.svg"
 import uploadedDocs from "../../../icons/computer-folder-open-icon 1.svg"
 import userManagement from "../../../icons/user-management.svg"
 import arrowDown from "../../../icons/arrow-down-white.svg"
+import { Link } from "react-router-dom"
 
 
 const NavBar = (props) => {
@@ -15,13 +16,13 @@ const NavBar = (props) => {
             <img src={dashboard} alt="Vector" className="dashboard_img"></img>
             <span className="dashboard_text">Dashboard</span>
             </div>
-            <div className="document_m dropdown" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div className="document_m dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <img src={uploadedDocs} alt="" className="document_img" />
                 <span className="document_text">Document Management</span>
-                <img src={arrowDown} alt="" className="dropdown-toggle"  id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"/>
-                <div class="dropdown-menu dropdown_external" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">Add Documents</a>
-                    <a class="dropdown-item" href="#">All Documents</a>
+                <img src={arrowDown} alt="" className="dropdown-toggle"   data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"/>
+                <div className="dropdown-menu dropdown_external" aria-labelledby="dropdownMenuButton">
+                    <Link className="dropdown-item" to={"/uploadDocPage"}>Add Documents</Link>
+                    <Link className="dropdown-item" to={"/dashboard"}>All Documents</Link>
                    
                 </div>
 

@@ -74,7 +74,7 @@ const PieChart = (props) => {
             type: 'pie'
         },
         title: {
-            text: 'Top Viewers Of Documents'
+            text: ''
         },
         tooltip: {
             pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
@@ -101,7 +101,7 @@ const PieChart = (props) => {
         }]
     }
     return (
-        <div className="outer-container table">
+        <div className="outer-container">
             <div className="pie-chart custom_css">
                 <HighchartsReact
                     highcharts={Highcharts}

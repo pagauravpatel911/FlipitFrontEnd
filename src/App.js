@@ -19,6 +19,10 @@ import EvaluteDoc from './components/PieChart/EvaluteDoc/EvaluteDoc';
 import UploadDocPage from './components/Pages/UploadDocPage/UploadDocPage';
 import EvaulatePage from './components/Pages/EvaulatePage/EvaulatePage';
 import Table from './components/Table/Table';
+import DPagination from './components/Pagination/Pagination';
+import MetaResponce from './components/Responce/MetaResponce/MetaResponce';
+import EditIcons from './components/EditIcons/EditIcons';
+import FlipBook from './components/Pages/FlipBook/FlipBook';
 function App() {
   return (
     <div className="App">
@@ -41,6 +45,13 @@ function App() {
      <Route path="/uploadDocPage" element={<UploadDocPage/>}/>
      <Route path="/EvaulatePage" element={<EvaulatePage/>}/>
      <Route path="/Table" element={<Table/>}/>
+     <Route path="/MetaResponce" element={<MetaResponce/>}/>
+     <Route path="/EditIcons" element={<EditIcons/>}/>
+     <Route path="/FlipBook" element={<FlipBook/>}/>
+
+    
+    
+     <Route path="/Pagination" element={<DPagination/>}/>
    </Routes>
    </BrowserRouter>
     </div>

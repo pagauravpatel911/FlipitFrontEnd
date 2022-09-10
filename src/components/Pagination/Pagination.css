@@ -1,0 +1,12 @@
+.page-link{
+    color:  #606060 !important;
+    
+font-family: 'Roboto' !important;
+font-style: normal !important;
+font-weight: 400 !important;
+font-size: 12px !important;
+line-height: 126% !important;
+/* or 15px */
+
+letter-spacing: -0.02em !important;
+}
