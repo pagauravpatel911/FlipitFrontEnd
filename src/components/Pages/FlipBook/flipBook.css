@@ -1,0 +1,26 @@
+/* .flipBook{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+} */
+
+
+
+/* .flipbook_container{
+    width: 700px !important;
+    width: 700px !important;
+    display: flex !important;
+    justify-content: center !important;
+} */
+
+.flipbook_container, .df-3dcanvas{
+   max-width: 500px;
+   max-height: 500px;
+    box-shadow: 0 .5rem 1rem #00000026!important;
+    border: 1px solid #ccc!important;
+
+    /* background-color: aqua; */
+}
+

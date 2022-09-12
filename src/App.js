@@ -22,7 +22,7 @@ import Table from './components/Table/Table';
 import DPagination from './components/Pagination/Pagination';
 import MetaResponce from './components/Responce/MetaResponce/MetaResponce';
 import EditIcons from './components/EditIcons/EditIcons';
-import FlipBook from './components/Pages/FlipBook/FlipBook';
+import { FlipBook } from './components/Pages/FlipBook/FlipBook';
 function App() {
   return (
     <div className="App">
@@ -47,7 +47,7 @@ function App() {
      <Route path="/Table" element={<Table/>}/>
      <Route path="/MetaResponce" element={<MetaResponce/>}/>
      <Route path="/EditIcons" element={<EditIcons/>}/>
-     <Route path="/FlipBook" element={<FlipBook/>}/>
+     <Route path="/FlipBook/:uniqueCode" element={<FlipBook/>}/>
 
     
     

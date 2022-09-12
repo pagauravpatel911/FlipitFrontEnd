@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+when you intrigrate the html page
+you can use inside in <> </> its act like a frigment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+header:{
+    "Authorization": `Bearer ${access_token}`,
+}
 
-## Available Scripts
 
-In the project directory, you can run:
+# flexbox :-
+# parent element are always cosidered as flexbox and thiee child are considered as a flexitems or element
+# flex fox work on the axis and its work on the x or y axis at one time its only works in the on axis
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# x axis is called as a row -- default the row direction
+# y axis is called as a column
+# if child element of the flex box goes outside they shrinking thier child elemnt in the parent area flexbox never want to thier child elem goes ouside the area of the flexbox
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# if flex direction is row your main axis is x and y is cross axis
+# if flex direction is col your main axis is y and x is cross axis
 
-### `npm test`
+row --> x = main axis  y = cross axis
+col --> x = cross axis y = main axis
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# justify contain is the property always work on the main axis
+   justify-contain => center,flex-start,flex-end,space-evenly,space-between,sepace-around -->
 
-### `npm run build`
+# align iems always work on the cross axis
+align-items => center,flex-start,flex-end
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# if you dont want to shink the flex items we have the property that flex-wrap by default is no wrap
+    flex-wrap => wrap
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# align contain -- is used for  the  when you are multiple line of items and at that point it is used for the adjust
+  align-contain => center,flex-start,flex-end
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+  # property to the child in the flex grow  you can give the child flex - grow
+     flex-grow => 1 its gives the higher space and take all space left
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# position :- its a propery that define a position to the element
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# default postion is static
 
-## Learn More
+# Postion -Relative :-postion  according to its origanal place where its created firstly as soon as you gate position four opstion gate activated to the top of margin 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# postion absolute :- postion according to its view port the amout of the screen you on the screen  that is the view port and the position absolute works like that its works 
+# postion according to its nearest postion ancester else it goes to the view port
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# position fixed :- positiond according to the view port and its will never scrolled its uses on the navbar
 
-### Code Splitting
+# when you used postion one more property gets activated 
+# z-index: 1 to gets higer property 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+craeate toast msg
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+craeete stateVariable
+make booleanvalue
 
-### Making a Progressive Web App
+only load when its truee use ternory operator if it is true load respocs if it is not then not show
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+ 
+
+
+  
+
